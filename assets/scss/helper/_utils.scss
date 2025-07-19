@@ -1,0 +1,261 @@
+/* 格線系統 */
+.container {
+    max-width: 1320px; /* 補盒模型推出的 padding。不會貼齊兩側，內容仍會被限縮在 1296 的寬度 */
+    margin: 0 auto;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+[class*="col-"] {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.col-1 {
+    width: calc(100% / 12);
+}
+.col-2 {
+    width: calc(100% / 12 * 2);
+}
+.col-3 {
+    width: calc(100% / 12 * 3);
+}
+.col-4 {
+    width: calc(100% / 12 * 4);
+}
+.col-5 {
+    width: calc(100% / 12 *5);
+}
+.col-7 {
+    width: calc(100% / 12 * 7);
+}
+.col-8 {
+    width: calc(100% / 12 * 8);
+}
+.col-10 {
+    width: calc(100% / 12* 10);
+}
+.col-12 {
+    width: calc(100% / 12 * 12);
+}
+
+/* 行動版 - 格線 */
+@media (max-width: 767px) {
+    .row {
+       margin-left: -6px;
+       margin-right: -6px;
+    }
+    [class*="col-md-"] {
+        padding-right: 6px;
+        padding-left: 6px;
+    }
+    .col-md-1 {
+        width: calc(100% / 4);
+    }
+    .col-md-2 {
+        width: calc(100% / 4 * 2);
+    }
+    .col-md-3 {
+        width: calc(100% / 4 * 3);
+    }
+    .col-md-4 {
+        width: 100%;
+    }
+}
+
+/* 背景顏色 */
+.bg-primary-100 {
+    background-color: $primary_100;
+}
+.bg-primary-200 {
+    background-color: $primary_200;
+}
+.bg-neutral-100 {
+    background-color: $neutral_100;
+}
+
+/* 排版 */
+
+.d-flex {
+    display: flex;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+@media (max-width: 576px) {
+    .d-sm-none {
+        display: none;
+    }
+    .d-sm-block {
+        display: block;
+    }
+}
+
+/* 間距 */
+.p-12 {
+    padding: 12px;
+}
+.p-32 {
+    padding: 32px;
+}
+.pt-32 {
+    padding-top: 32px;
+}
+.pl-12 {
+    padding-left: 12px;
+}
+.pb-4 {
+    padding-bottom: 4px;
+}
+.pb-12 {
+    padding-bottom: 12px;
+}
+.pb-48 {
+    padding-bottom: 48px;
+}
+.py-7 {
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+.py-8 {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.py-12 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.py-24 {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+.py-48 {
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+.py-64 {
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+.mt-32 {
+    margin-top: 32px;
+}
+.mr-8 {
+    margin-right: 8px;
+}
+.mr-12 {
+    margin-right: 12px;
+}
+.mr-24 {
+    margin-right: 24px;
+}
+.mr-30 {
+    margin-right: 30px;
+}
+.mr-40 {
+    margin-right: 40px;
+}
+.mr-48 {
+    margin-right: 48px;
+}
+.mb-4 {
+    margin-bottom: 4px;
+}
+.mb-8 {
+    margin-bottom: 8px;
+}
+.mb-12 {
+    margin-bottom: 12px;
+}
+.mb-16 {
+    margin-bottom: 16px;
+}
+/* .mb-20 {
+    margin-bottom: 20px;
+} */
+.mb-24 {
+    margin-bottom: 24px;
+}
+.mb-32 {
+    margin-bottom: 32px;
+}
+.mb-40 {
+    margin-bottom: 40px;
+}
+.mb-48 {
+    margin-bottom: 48px;
+}
+.my-16 {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+/* 行動版 - 間距 */
+@media (max-width: 576px) {
+    .p-sm-24 {
+        padding: 24;
+    }
+    .p-sm-8-16 {
+        padding: 8px 16px;
+    }
+    .pb-sm-32 {
+        padding-bottom: 32px;
+    }
+    .py-sm-12 {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+    .py-sm-32 {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+    .px-sm-12 {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    .mr-sm-0 {
+        margin-right: 0;
+    }
+    .mr-sm-16 {
+        margin-right: 16px;
+    }
+    .mb-sm-4 {
+        margin-bottom: 4px;
+    }
+    .mb-sm-8 {
+        margin-bottom: 8px;
+    }
+    .mb-sm-12 {
+        margin-bottom: 12px;
+    }
+    .mb-sm-16 {
+        margin-bottom: 16px;
+    }
+    .mb-sm-32 {
+        margin-bottom: 32px;
+    }
+    .mx-sm-12 {
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+}

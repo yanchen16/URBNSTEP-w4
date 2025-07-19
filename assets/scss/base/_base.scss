@@ -1,0 +1,104 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* 通用設定 */
+body {
+    font-family: "Noto Sans TC", sans-serif;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+    color: $neutral_900;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+a {
+    color: $neutral_900;
+    text-decoration: none;
+    display: block;
+    font-weight: 500;
+    &:hover {
+        color: $primary_400;
+    }
+}
+
+/* 通用樣式 - 標題 */
+.heading-1 {
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.heading-2 {
+    font-size: 32px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.heading-3 {
+    font-size: 28px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+.heading-4 {
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+.heading-5 {
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+.heading-6 {
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+/* 行動版 - 標題 */
+@media (max-width: 576px) {
+    .heading-sm-3{
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 1.2;
+    }
+    .heading-sm-5 {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 1.2;
+    }
+    .heading-sm-6 {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.2;
+    }
+}
+
+/* 文字大小、顏色 */
+.text-sm {
+    font-size: 14px;
+}
+.text-md {
+    font-weight: 500;
+}
+.text-primary-400 {
+    color: $primary_400;
+}
+.text-neutral-500 {
+    color: $neutral_500;
+}
+.text-neutral-600 {
+    color: $neutral_600;
+}
+.text-neutral-900 {
+    color: $neutral_900;
+}
+.text-danger-300 {
+    color: $danger_300;
+}

@@ -1,5 +1,17 @@
+
+@import './helper/variables';
+@import './helper/utils';
+
+@import './base/reset';
+@import './base/base';
+
+@import './components/breadcrumb';
+@import './components/button';
+
 @import './layout/header.scss';
 @import './layout/footer.scss';
 
-
 @import './pages/index.scss';
+@import './pages/productList';
+@import './pages/productInfo';
+@import './pages/brandStory';
