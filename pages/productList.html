@@ -29,7 +29,7 @@
     <main class="container">
       <div class="row">
         <!-- 左側選單 -->
-        <div class="col-2">
+        <div class="col-2 d-sm-none">
           <nav>
               <ul class="menu">
                   <li><a class="py-12 mb-16 active" href="#">所有商品</a></li>
@@ -41,71 +41,93 @@
           </nav>
         </div>
         <!-- 右側商品 -->
-        <div class="col-10">
+        <div class="col-10 col-md-4">
           <ul class="row">
-              <li class="col-4 mb-48">
+              <li class="col-4 mb-48 col-md-2 mb-sm-24">
                   <a href="./productInfo.html">
-                      <img class="pb-12" src="../assets/images/product.png" alt="PLATFORM 404 blue">
+                      <img class="pb-12 pb-sm-8" src="../assets/images/product.png" alt="PLATFORM 404 blue">
                       <h2 class="heading-6 pb-4 ">PLATFORM 404</h2>
                       <data class="text-md" value="2600">NT$2,600</data>
                   </a>
               </li>
-              <li class="col-4 mb-48">
+              <li class="col-4 mb-48 col-md-2 mb-sm-24">
                   <a href="./productInfo.html">
-                      <img class="pb-12" src="../assets/images/product-1.png" alt="PLATFORM 404 orange">
+                      <img class="pb-12 pb-sm-8" src="../assets/images/product-1.png" alt="PLATFORM 404 orange">
                       <h2 class="heading-6 pb-4 ">PLATFORM 404</h2>
                       <data class="text-md" value="2600">NT$2,600</data>
                   </a>
               </li>
-              <li class="col-4 mb-48">
+              <li class="col-4 mb-48 col-md-2 mb-sm-24">
                   <a href="./productInfo.html">
-                      <img class="pb-12" src="../assets/images/product-2.png" alt="VM001">
+                      <img class="pb-12 pb-sm-8" src="../assets/images/product-2.png" alt="VM001">
                       <h2 class="heading-6 pb-4 ">VM001</h2>
                       <data class="text-md" value="2600">NT$2,600</data>
                   </a>
               </li>
-              <li class="col-4 mb-48">
+              <li class="col-4 mb-48 col-md-2 mb-sm-24">
                   <a href="./productInfo.html">
-                      <img class="pb-12" src="../assets/images/product-3.png" alt="Melty Kiss">
+                      <img class="pb-12 pb-sm-8" src="../assets/images/product-3.png" alt="Melty Kiss">
                       <h2 class="heading-6 pb-4 ">Melty Kiss</h2>
                       <data class="text-md" value="4000">NT$4,000</data>
                   </a>
               </li>
-              <li class="col-4 mb-48">
+              <li class="col-4 mb-48 col-md-2 mb-sm-24">
                   <a href="./productInfo.html">
-                      <img class="pb-12" src="../assets/images/product-4.png" alt="BOOMBLOK">
+                      <img class="pb-12 pb-sm-8" src="../assets/images/product-4.png" alt="BOOMBLOK">
                       <h2 class="heading-6 pb-4 ">BOOMBLOK</h2>
                       <data class="text-md" value="3200">NT$3,200</data>
                   </a>
               </li>
-              <li class="col-4 mb-48">
+              <li class="col-4 mb-48 col-md-2 mb-sm-24">
                   <a href="./productInfo.html">
-                      <img class="pb-12" src="../assets/images/product-5.png" alt="BOOMBLOK">
+                      <img class="pb-12 pb-sm-8" src="../assets/images/product-5.png" alt="BOOMBLOK">
                       <h2 class="heading-6 pb-4 ">BOOMBLOK</h2>
                       <data class="text-md" value="3200">NT$3,200</data>
                   </a>
               </li>
-              <li class="col-4 mb-48">
+              <li class="col-4 mb-48 col-md-2 mb-sm-24">
                   <a href="./productInfo.html">
-                      <img class="pb-12" src="../assets/images/product-6.png" alt="R:UNER">
+                      <img class="pb-12 pb-sm-8" src="../assets/images/product-6.png" alt="R:UNER">
                       <h2 class="heading-6 pb-4 ">R:UNER</h2>
                       <data class="text-md" value="4000">NT$4,000</data>
                   </a>
               </li>
-              <li class="col-4 mb-48">
+              <li class="col-4 mb-48 col-md-2 mb-sm-24">
                   <a href="./productInfo.html">
-                      <img class="pb-12" src="../assets/images/product-7.png" alt="Sugar Snap">
+                      <img class="pb-12 pb-sm-8" src="../assets/images/product-7.png" alt="Sugar Snap">
                       <h2 class="heading-6 pb-4 ">Sugar Snap</h2>
                       <data class="text-md" value="4000">NT$4,000</data>
                   </a>
               </li>
-              <li class="col-4 mb-48">
+              <li class="col-4 mb-48 col-md-2 mb-sm-24">
                   <a href="./productInfo.html">
-                      <img class="pb-12" src="../assets/images/product-8.png" alt="Neofoam">
+                      <img class="pb-12 pb-sm-8" src="../assets/images/product-8.png" alt="Neofoam">
                       <h2 class="heading-6 pb-4 ">Neofoam</h2>
                       <data class="text-md" value="4000">NT$4,000</data>
                   </a>
               </li>
+              <li class="d-none d-sm-block col-md-2 mb-sm-24">
+                <a href="./productInfo.html">
+                    <img class="pb-12 pb-sm-8" src="../assets/images/product-9.png" alt="Neofoam">
+                    <h2 class="heading-6 pb-4 ">Buttermood</h2>
+                    <data class="text-md" value="4000">NT$4,000</data>
+                </a>
+            </li>
+          </ul>
+          <!-- 分頁 -->
+          <ul class="d-flex justify-center align-center mb-32">
+            <li class="mr-12 page-item">
+                <button disabled class="btn-page" type="button">
+                    <i class="bi bi-chevron-left">
+                    </i>
+                </button>
+            </li>
+            <li class="mr-8 page-item active"><button class="btn-page" type="button">1</button></li>
+            <li class="mr-8 page-item"><button class="btn-page" type="button">2</button></li>
+            <li class="mr-8 page-item"><button class="btn-page" type="button">3</button></li>
+            <li class="mr-8 page-item">...</li>
+            <li class="mr-12 page-item"><button class="btn-page" type="button">10</button></li>
+            <li class="page-item"><button class="btn-page" type="button"><i class="bi bi-chevron-right"></i></button></li>
           </ul>
         </div>
       </div>

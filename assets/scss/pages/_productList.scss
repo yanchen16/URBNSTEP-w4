@@ -1,0 +1,17 @@
+/* 側邊選單 */
+.menu {
+    .active {
+        color: $primary_400;
+    }
+}
+
+/* 分頁按鈕 */
+.page-item {
+    &.active {
+        font-weight: 500;
+        background-color: $primary_300;
+    }
+    &:hover {
+        background-color: $primary_300;
+    }
+}

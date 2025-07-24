@@ -1,0 +1,59 @@
+/* 左側 - 產品圖片（參考助教設定） */
+.product-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -4px;
+    margin-left: -4px;
+    
+    @include pad {
+        margin-left: -6px;
+        margin-right: -6px;
+    }
+}
+
+.product-col {
+    width: calc(100% / 12 * 6);
+    padding-right: 4px;
+    padding-left: 4px;
+
+    @include pad {
+        width: 100%;
+    }
+}
+
+/* 右側 產品詳情 */
+/* 麵包屑導覽列 */
+.breadcrumb-item {
+    font-size: 14px;
+}
+
+/* 價格 */
+.del-price {
+    padding-left: 8px;
+}
+
+/* 顏色 */
+.product-color {
+    width: 64px;
+}
+
+/* 尺寸 */
+.btn-product-size {
+    width: 160px;
+    border: 1px solid $neutral_300;
+    &.active {
+        border: 1px solid $neutral_900;
+    }
+}
+.action-btn {
+    width: 259px;
+    &.active {
+        background-color: $neutral_900;
+        color: #fff;
+    }
+}
+
+/* 細節介紹 */
+.info-block {
+    border-bottom: 1px solid $neutral_300;
+}

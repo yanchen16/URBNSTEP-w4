@@ -48,8 +48,8 @@
 /* 行動版 - 格線 */
 @media (max-width: 767px) {
     .row {
-       margin-left: -6px;
-       margin-right: -6px;
+        margin-left: -6px;
+        margin-right: -6px;
     }
     [class*="col-md-"] {
         padding-right: 6px;
@@ -81,7 +81,9 @@
 }
 
 /* 排版 */
-
+.d-none {
+    display: none;
+}
 .d-flex {
     display: flex;
 }
@@ -211,6 +213,13 @@
 }
 
 /* 行動版 - 間距 */
+@media (max-width: 767px) {
+    .py-md-0 {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
+
 @media (max-width: 576px) {
     .p-sm-24 {
         padding: 24;
@@ -218,8 +227,15 @@
     .p-sm-8-16 {
         padding: 8px 16px;
     }
+    .pb-sm-8 {
+        padding-bottom: 8px;
+    }
     .pb-sm-32 {
         padding-bottom: 32px;
+    }
+    .py-sm-8 {
+        padding-top: 8px;
+        padding-bottom: 8px;
     }
     .py-sm-12 {
         padding-top: 12px;
@@ -239,6 +255,9 @@
     .mr-sm-0 {
         margin-right: 0;
     }
+    .mr-sm-8 {
+        margin-right: 8px;
+    }
     .mr-sm-16 {
         margin-right: 16px;
     }
@@ -253,6 +272,9 @@
     }
     .mb-sm-16 {
         margin-bottom: 16px;
+    }
+    .mb-sm-24 {
+        margin-bottom: 24px;
     }
     .mb-sm-32 {
         margin-bottom: 32px;
