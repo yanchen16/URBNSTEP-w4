@@ -13,9 +13,8 @@
         color: #fff;
         text-align: center;
     }
-}
-@media (max-width: 576px) {
-    .header {
+
+    @include mobile {
         background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(/assets/images/hero-sm.png);
         background-repeat: no-repeat;
         padding: 87px 0;
@@ -28,9 +27,8 @@
 .block-quote {
     text-align: center;
     border-radius: 12px;
-}
-@media (max-width: 576px) {
-    .block-quote {
+
+    @include mobile {
         text-align: left;
     }
 }
@@ -67,5 +65,8 @@
     border-bottom: 1px solid $neutral_300;
     .underline {
         border-bottom: 1px solid $primary_400;
+    }
+    a:hover {
+        color: black;
     }
 }

@@ -1,0 +1,14 @@
+/* 麵包屑導航元件 */
+.breadcrumb-item + .breadcrumb-item::before {
+    content: '/';
+    padding: 0 12px;
+    font-weight: 700;
+    color: $neutral_300;
+}
+.breadcrumb-item {
+    display: flex;
+    font-weight: 500;
+}
+.breadcrumb-link {
+    color: $neutral_600;
+}

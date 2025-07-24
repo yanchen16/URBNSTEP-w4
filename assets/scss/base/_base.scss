@@ -63,8 +63,13 @@ a {
 }
 /* 行動版 - 標題 */
 @media (max-width: 576px) {
-    .heading-sm-3{
+    .heading-sm-3 {
         font-size: 28px;
+        font-weight: 700;
+        line-height: 1.2;
+    }
+    .heading-sm-4 {
+        font-size: 24px;
         font-weight: 700;
         line-height: 1.2;
     }

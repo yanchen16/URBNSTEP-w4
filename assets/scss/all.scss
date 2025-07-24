@@ -1,16 +1,21 @@
-
+// helper
 @import './helper/variables';
+@import './helper/mixin';
 @import './helper/utils';
 
+// base
 @import './base/reset';
 @import './base/base';
 
-@import './components/breadcrumb';
-@import './components/button';
-
+// layout
 @import './layout/header.scss';
 @import './layout/footer.scss';
 
+// components
+@import './components/breadcrumb';
+@import './components/button';
+
+// pages
 @import './pages/index.scss';
 @import './pages/productList';
 @import './pages/productInfo';
