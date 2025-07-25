@@ -57,3 +57,26 @@
 .info-block {
     border-bottom: 1px solid $neutral_300;
 }
+
+/* 你可能也會喜歡 */
+
+@media (max-width: 767px) {
+    .related-products-row {
+        margin-right: -8px;
+        margin-left: -8px;
+    }
+    .related-products-col {
+        min-width: 316px;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+}
+.flex-md-nowrap {
+    flex-wrap: nowrap;
+}
+.overflow-x-md-auto {
+    overflow-x: auto;
+}
+
+
