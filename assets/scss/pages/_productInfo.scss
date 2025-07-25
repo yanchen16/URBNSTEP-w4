@@ -58,8 +58,19 @@
     border-bottom: 1px solid $neutral_300;
 }
 
-/* 你可能也會喜歡 */
+/* 行動按鈕 */
+.btn-favorite {
+    background: transparent;
+    border: none;
+    .bi-heart {
+        font-size: 24px;
+    }
+    &:hover {
+        color: $primary_400;
+    }
+}
 
+/* 你可能也會喜歡 */
 @media (max-width: 767px) {
     .related-products-row {
         margin-right: -8px;
