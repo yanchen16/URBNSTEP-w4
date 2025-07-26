@@ -29,6 +29,11 @@ a {
 }
 
 /* 通用樣式 - 標題 */
+.display-1 {
+    font-size: 64px;
+    line-height: 1.2;
+    font-weight: 700;
+}
 .heading-1 {
     font-size: 40px;
     line-height: 1.2;
@@ -63,6 +68,11 @@ a {
 }
 /* 行動版 - 標題 */
 @media (max-width: 576px) {
+    .display-sm-2 {
+        font-size: 48px;
+        line-height: 1.2;
+        font-weight: 700;
+    }
     .heading-sm-3 {
         font-size: 28px;
         font-weight: 700;

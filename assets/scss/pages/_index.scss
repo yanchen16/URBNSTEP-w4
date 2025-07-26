@@ -1,3 +1,17 @@
-.index-title {
-  font-size: 100px;
+.index-header {
+  background-image: url(/assets/images/banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 289px;
+  padding-bottom: 288px;
+  padding-left: 200px;
+  .index-title {
+    color: #fff;
+  }
+
+  @include mobile {
+    background-image: url(/assets/images/banner-sm.png);
+    background-repeat: no-repeat;
+    padding: 155px 24px;
+  }
 }
