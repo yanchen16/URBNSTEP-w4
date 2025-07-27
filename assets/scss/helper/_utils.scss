@@ -32,6 +32,9 @@
 .col-5 {
     width: calc(100% / 12 *5);
 }
+.col-6 {
+    width: calc(100% / 12 * 6);
+}
 .col-7 {
     width: calc(100% / 12 * 7);
 }
@@ -103,6 +106,9 @@
 .flex-wrap {
     flex-wrap: wrap;
 }
+.text-center {
+    text-align: center;
+}
 
 @media (max-width: 767px) {
     .d-md-none {
@@ -117,6 +123,9 @@
 }
 
 @media (max-width: 576px) {
+    .d-sm-flex {
+        display: flex;
+    }
     .d-sm-none {
         display: none;
     }
@@ -126,6 +135,10 @@
     .d-sm-inline-block {
         display: inline-block;
     }
+    .flex-sm-column {
+        flex-direction: column;
+    }
+
 }
 
 /* 間距 */
@@ -149,6 +162,9 @@
 }
 .pb-16 {
     padding-bottom: 16px;
+}
+.pb-32 {
+    padding-bottom: 32px;
 }
 .pb-48 {
     padding-bottom: 48px;
@@ -176,6 +192,10 @@
 .py-64 {
     padding-top: 64px;
     padding-bottom: 64px;
+}
+.px-24 {
+    padding-left: 24px;
+    padding-right: 24px;
 }
 .mt-32 {
     margin-top: 32px;
@@ -229,6 +249,10 @@
     margin-top: 16px;
     margin-bottom: 16px;
 }
+.my-64 {
+    margin-top: 64px;
+    margin-bottom: 64px;
+}
 
 /* 行動版 - 間距 */
 @media (max-width: 767px) {
@@ -245,8 +269,14 @@
     .p-sm-8-16 {
         padding: 8px 16px;
     }
+    .pb-sm-0 {
+        padding-bottom: 0;
+    }
     .pb-sm-8 {
         padding-bottom: 8px;
+    }
+    .pb-sm-16 {
+        padding-bottom: 16px;
     }
     .pb-sm-32 {
         padding-bottom: 32px;
@@ -309,4 +339,10 @@
         margin-bottom: 12px;
         margin-top: 12px;
     }
+    .gap-sm-8 {
+        gap: 8px;
+    }
+    .gap-sm-4 {
+        gap: 4px;
+    }    
 }

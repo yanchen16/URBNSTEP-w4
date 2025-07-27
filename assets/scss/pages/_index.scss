@@ -1,3 +1,7 @@
+/* *{
+  outline: 1px solid #000;
+} */
+
 .index-header {
   background-image: url(/assets/images/banner.png);
   background-repeat: no-repeat;
@@ -13,5 +17,119 @@
     background-image: url(/assets/images/banner-sm.png);
     background-repeat: no-repeat;
     padding: 155px 24px;
+  }
+}
+/* 熱銷補貨 */
+.product {
+  position: relative;
+  &-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: $primary_400;
+    background-color: $primary_100;
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 767px) {
+  .products-row {
+      margin-right: -8px;
+      margin-left: -8px;
+  }
+  .products-col {
+      min-width: 316px;
+      padding-left: 8px;
+      padding-right: 8px;
+  }
+}
+
+/* URBNSTEP x Kevin Chen */
+.banner {
+  background-image: url(/assets/images/banner-co-branded.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 100px 0;
+  text-align: center;
+  position: relative;
+  .star-img {
+    position: absolute;
+    width: 48px;
+    top: 68px;
+    left: calc(50% - 397px);
+  }
+  .sparkle-img {
+    position: absolute;
+    width: 76px;
+    bottom: 132px;
+    right: calc(50% - 357px);
+  }
+  @include pad {
+    background-image: url(/assets/images/banner-co-branded-sm.png);
+    padding: 64px 0;
+    overflow: hidden;
+    .star-img {
+      top: 32px;
+      left: -20px;
+    }
+    .sparkle-img {
+      bottom: 104px;
+      right: -28px;
+    }
+  }
+}
+
+/* 依系列選購 */
+.category {
+  position: relative;
+  &-text {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(black, 0.4);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.cards-gallery {
+  &-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -4px;
+  }
+  &-col-4 {
+    width: calc(100% / 12 * 4);
+    padding: 4px;
+  }
+  &-col-6 {
+    width: calc(100% / 12 * 6);
+    padding: 4px;
+  }
+  &-col-12 {
+    width: 100%;
+    padding: 4px;
+  }
+
+  @include pad {
+    &-row {
+      flex-wrap: nowrap;
+      margin: 0 -8px;
+      img {
+        min-width: 300px;
+      }
+    }
+    &-col-4,
+    &-col-6,
+    &-col-12 {
+      width: unset;
+      padding:0 8px;
+    }
   }
 }
